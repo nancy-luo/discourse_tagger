@@ -109,7 +109,7 @@ module Tagger
 
     private
       def trust_level
-        if TrustLevel.valid_level?(:leader)
+        if TrustLevel.levels[:leader]
          :leader
          else
           3
